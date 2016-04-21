@@ -30,7 +30,7 @@ namespace MileageCalculator
             {
                 milesTraveled = end -= start;
                 amountOwed = milesTraveled *= reimburseRate;
-                label4.Text = " $ " + amountOwed;
+                label4.Text = "$ " + amountOwed;
             }
             else
             {
