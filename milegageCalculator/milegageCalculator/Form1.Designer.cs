@@ -1,4 +1,4 @@
-﻿namespace milegageCalculator
+﻿namespace MileageCalculator
 {
     partial class Form1
     {
@@ -44,41 +44,71 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(56, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 12);
+            this.label1.Size = new System.Drawing.Size(81, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Starting Mileage";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(58, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 12);
+            this.label2.Size = new System.Drawing.Size(79, 12);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Ending Mileage";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(58, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 12);
+            this.label3.Size = new System.Drawing.Size(73, 12);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "Amount Owed";
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(163, 43);
+            this.numericUpDown1.Location = new System.Drawing.Point(163, 52);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown1.TabIndex = 3;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(163, 100);
+            this.numericUpDown2.Location = new System.Drawing.Point(163, 98);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown2.TabIndex = 4;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label4
             // 
@@ -86,18 +116,18 @@
             this.label4.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label4.Location = new System.Drawing.Point(163, 161);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 21);
+            this.label4.Size = new System.Drawing.Size(0, 21);
             this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(163, 266);
+            this.button1.Location = new System.Drawing.Point(163, 238);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 28);
             this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
+            this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
