@@ -28,8 +28,8 @@ namespace MileageCalculator
             int end = (int)numericUpDown2.Value;
             if (start < end)
             {
-                milesTraveled = end -= start;
-                amountOwed = milesTraveled *= reimburseRate;
+                milesTraveled = end - start;
+                amountOwed = milesTraveled * reimburseRate;
                 label4.Text = " $ " + amountOwed;
             }
             else
@@ -41,6 +41,9 @@ namespace MileageCalculator
 
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(milesTraveled + " miles", "Miles Travled");
+        }
     }
 }
