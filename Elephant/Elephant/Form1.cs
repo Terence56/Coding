@@ -53,6 +53,9 @@ namespace Elephant
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+            //lloyd.TellMe("Hi!",lucinda);
+            lloyd.SpeakTo(lucinda, "hellow");
             //lloyd = lucinda;
             //會被複寫
             lloyd.EarSize = 4321;
